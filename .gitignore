@@ -1,0 +1,28 @@
+# Gradle
+/.gradle/
+/*/build/
+/build/
+
+# Eclipse
+/.metadata
+/.recommenders
+/*/.classpath
+/*/.project
+/*/.settings
+/*/bin/
+
+# InteliJ IDEA
+/.idea
+/workcraft.iml
+/workcraft.ipr
+/workcraft.iws
+/*/*.iml
+
+# Generated source files
+/*/src-gen/
+
+# dist-template/ and doc/ subdirectories)
+.DS_Store
+
+# Crash dumps
+/*.hprof
