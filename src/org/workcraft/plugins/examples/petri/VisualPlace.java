@@ -8,7 +8,7 @@ import org.workcraft.dom.visual.VisualComponent;
 import org.workcraft.gui.properties.PropertyDeclaration;
 import org.workcraft.gui.tools.Decoration;
 import org.workcraft.plugins.builtin.settings.VisualCommonSettings;
-import org.workcraft.utils.Coloriser;
+import org.workcraft.utils.ColorUtils;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -50,7 +50,7 @@ public class VisualPlace extends VisualComponent {
         super.draw(r);
         Graphics2D g = r.getGraphics();
         Decoration d = r.getDecoration();
-        g.setColor(Coloriser.colorise(getForegroundColor(), d.getColorisation()));
+        g.setColor(ColorUtils.colorise(getForegroundColor(), d.getColorisation()));
         int tokenCount = getReferencedComponent().getTokenCount();
         double tokenSize = 0.5 * VisualCommonSettings.getNodeSize();
         if (tokenCount == 1) {
